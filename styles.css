@@ -170,6 +170,12 @@ button{
 
 /*  BALLOONS */
 
+.balloon__container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 #prices{
     position: relative;
     max-width: 100vh;
@@ -388,5 +394,14 @@ margin-bottom: 8px;
     }
     .header__img{
        display: none;
+    }
+
+    .balloons{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .balloon{
+        width:100%;
     }
 }
