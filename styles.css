@@ -360,6 +360,14 @@ margin-bottom: 8px;
     .btn__menu{
         display: block;
     }
+    .header__img{
+        width: 50%;
+     }
+     .header__img--wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
 }
 
 @media (max-width: 550px) {
@@ -393,8 +401,13 @@ margin-bottom: 8px;
         width: 75px;
     }
     .header__img{
-       display: none;
+       width: 50%;
     }
+    .header__img--wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
 
     .balloons{
         display: flex;
@@ -403,5 +416,21 @@ margin-bottom: 8px;
     }
     .balloon{
         width:100%;
+
+    }
+
+    .balloon__img--wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .balloon__landscape{
+        width: 100%;
+    }
+
+    .balloons__landscape{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
