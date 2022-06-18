@@ -15,15 +15,14 @@ a{
     color: #daa520 ;
     font-size: 24px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .logo{
     width: 95px;
 }
 
-ul{
-    display: flex;
-}
+
 
 li{
     list-style: none; 
@@ -33,11 +32,6 @@ li{
 text-align: center;
 }
 
-.row{
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-}
 
 .img{
     width: 100%;
@@ -54,13 +48,16 @@ text-align: center;
     justify-content: space-between;
     display: flex;
     align-items: center;
-    width: 100%;
-    
+    width: 100%;    
+}
+
+.nav__link{
+    display: flex;
 }
 
 .nav__links{
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: 32px;
+    margin-left: 32px;
     text-decoration: none;
 }
 
@@ -73,6 +70,9 @@ text-align: center;
     margin-left: 40px;
 }
 
+
+/* MENU */ 
+
 .btn__menu{
     background-color: transparent;
     font-size: 40px;
@@ -83,7 +83,7 @@ text-align: center;
 
 .menu__backdrop{
     position: absolute;
-    background-color: grey;
+    background-color: black;
     top: 0;
     left: 0;
     right: 0;
@@ -110,6 +110,11 @@ header{
     overflow-y: hidden;
 }
 
+.menu__list{
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
 
 /*HOME*/
 
@@ -128,7 +133,7 @@ header{
 
 .header__container{
     width: 100%;
-    max-width: 720px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -137,7 +142,7 @@ header{
     padding-top: 24px;
 }
 
-h1{
+.header__title{
     font-size: 52px;
     text-align: center;
 }
@@ -159,6 +164,7 @@ button{
 .header__img--wrapper{
     padding: 20px;
     z-index: 2;
+    text-align: center;
 }
 .header__description{
     display: flex;
@@ -178,7 +184,6 @@ button{
 
 #prices{
     position: relative;
-    max-width: 100vh;
     background-color: grey;
     padding-top: 8vw;
 }
@@ -198,7 +203,6 @@ button{
     transform: translateY(-100%);
     filter: invert(50%)
 }
-
 
 .about__info{
     font-size: 16px;
@@ -244,7 +248,9 @@ button{
     margin-bottom: 8px;
     border-radius: 4px;
     overflow: hidden;
-    display:flex
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .balloon:hover .balloon__img{
@@ -258,7 +264,12 @@ button{
 .balloon__title{
     font-size: 20px;
     margin-bottom: 8px;
- 
+    font-weight: bold; 
+}
+
+.balloon__subheader{
+    margin-bottom: 8px;
+    font-style: italic;
 }
 
 .balloon__title:hover{
@@ -266,11 +277,12 @@ button{
     cursor: not-allowed;
 }
 
-.balloon__ratings{
-    margin-bottom: 8px;
-    color: goldenrod;
-   
+.book__price--normal:hover{
+    font-weight: bold;
+    text-decoration: underline;
+
 }
+
 
 .balloon__price--normal{
     padding-right: 10px;
@@ -284,30 +296,6 @@ h2{
     margin-bottom: 32px;
 }
 
-#prices{
-    position: relative;
-    max-width: 100vh;
-}
-
-#prices:before{
-    background: url('images/wave.svg');
-    content: "";
-    position: absolute;
-    width: 101vw;
-    height: 12vw;
-    left: 0;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;  
-}
-
-#pricess:before{
-    top: 1px;
-    transform: translateY(-100%);
-}
-
-
-
 /* FOOTER */
 
 footer{
@@ -317,6 +305,7 @@ footer{
     align-items: center;
     padding: 12px 0 ;
 }
+
 .footer__logo{
 max-width: 100px;
 margin-bottom: 8px;
@@ -333,7 +322,7 @@ margin-bottom: 8px;
 }
 
 .copyright{
-    color: white;
+    color: goldenrod;
 }
 
 
@@ -353,20 +342,41 @@ margin-bottom: 8px;
     button{
         font-size: 18px;
     }
-    .nav__links{
-        display: none;
+
+    .balloon{
+        width:100%;
     }
 
-    .btn__menu{
-        display: block;
+    .balloons{
+        flex-direction: column;
+        align-items: center;
     }
-    .header__img{
+
+    .balloon__img{
+        width: 50%;
+    }
+
+    .balloons__landscape{
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .header__img{
         width: 50%;
      }
-     .header__img--wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+     .subheader{
+        text-align: center;
+     }
+     .btn{
+        margin-top: 20px;
+     }
+
+     .balloon__img--landscape{
+        width: 50%;
+     }
+
+     .footer__link{
+        height: 48px;
      }
 }
 

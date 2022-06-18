@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <link rel="icon" href="./images/beespokelogosmall.png">
 </head>
 <body>
     <section id="nav-bar">
 <nav>
  <div class="nav__container">
     <img src="./images/beespokelogosmall.png" class="nav__logo" alt="">
-        <ul>
-            <li><a href="Home.html" class="nav__links">Home</a></li>
-            <li><a href="#prices" class="nav__links">Prices</a></li>
-            <li><a href="testimonials.html" class="nav__links">Testimonials</a></li>
+        <ul class="nav__link">
+            <li><a href="#prices" class="nav__links">Balloons</a></li>
+            <li><a href="testimonials" class="nav__links">Testimonials</a></li>
         </ul>
             <button class="btn__menu" onclick="openMenu()">
                 <i class="fas fa-bars"></i>
@@ -31,10 +31,10 @@
                 <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
              </li>
              <li class="menu__list">
-                <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                <a href="#prices" class="menu__link" onclick="closeMenu()">Balloons</a>
              </li>
              <li class="menu__list">
-                <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+                <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Testimonails</a>
              </li>
 </div>
 </nav>
@@ -43,9 +43,9 @@
     <header>
         <div class="header__container">
             <div class="header__description">
-                <h1>The home of Preston's best balloons</h1>
+                <h1 class="header__title">The home of Preston's best balloons</h1>
                 <p class="subheader">We provide event dressings & balloon displays.</p>
-                <p class="subheader">Beespoke ballon packages for all occasions.</p>
+                <p class="subheader">Beespoke balloon packages for all occasions.</p>
                 <p class="subheader">Covering Preston and surrounding areas.</p>           
                
                 <button class="btn">Email here</button>
@@ -58,7 +58,6 @@
 </section>
 <section id="prices">
     <div class="ballon__container">
-        <div class="row">
             <h2 class="section__title">
                 Our <span class="golden">Beespoke</span> balloon collection
             </h2>
@@ -72,6 +71,7 @@
                     <div class="balloon__title">
                     Balloon tower
                     </div>
+                    <div class="balloon__subheader"> Personalised to order. If you can think of it we can create it!</div>
                     <div class="balloon__price">
                         <span class="balloon__price--normal">From £25.00</span>
                     </div>
@@ -83,8 +83,9 @@
                       <div class="balloon__title">
                     Personalised bouquets - Up to 5 balloons
                     </div>
+                    <div class="balloon__subheader"> Any couloured latex balloon, can come with text or plain!</div>
                     <div class="book__price">
-                        <span class="book__price--normal">From £25.00</span>
+                        <span class="book__price--normal">From £4.50</span>
                     </div>
                 </div>
                 <div class="balloon">
@@ -94,8 +95,9 @@
                     <div class="balloon__title">
                     Large foil Numbers and Letters
                     </div>
+                    <div class="balloon__subheader"> We can do full words or ages, with a personalised message!</div>
                     <div class="book__price">
-                        <span class="book__price--normal">From £25.00</span>
+                        <span class="book__price--normal">From £10.00</span>
                     </div>
                 </div>
                 <div class="balloon">
@@ -103,10 +105,11 @@
                         <img class="balloon__img" src="./images/Bubble.JPG" alt="">
                     </figure>
                     <div class="balloon__title">
-                    Bubble balloons - Made to order
+                    Bubble balloons
                     </div>
+                    <div class="balloon__subheader"> The inside is made to order - feathers, gold flakes & smaller balloons. plus much more!</div>
                     <div class="book__price">
-                        <span class="book__price--normal">From £25.00</span>
+                        <span class="book__price--normal">From £15.00</span>
                     </div>
                 </div>
             </div>
@@ -116,10 +119,11 @@
                         <img class="balloon__img--landscape" src="./images/foil.JPG" alt="">
                     </figure>
                     <div class="balloon__title">
-                    Foil Balloons - can be shapes or figures!
+                    Individual Foil Balloons
                     </div>
+                    <div class="balloon__subheader"> Styled and made to order, includes a decorative box to put a few extras in!</div>
                     <div class="book__price">
-                        <span class="book__price--normal">From £25.00</span>
+                        <span class="book__price--normal">From £5.00</span>
                     </div>
                 </div>
                 <div class="balloon__landscape">
@@ -129,17 +133,17 @@
                     <div class="balloon__title">
                    Garlands and Balloon archs - Made to order
                     </div>
+                    <div class="balloon__subheader"> Our pride and joy, Our master balloon maker will help create the design of your dreams!</div>
                     <div class="book__price">
-                        <span class="book__price--normal">From £25.00</span>
+                        <span class="book__price--normal">From £35.00</span>
                     </div>
                 </div>
                                
             </div>
             </div>
-        </div>
     </div>
 </section>
-<section id="specials">
+<section id="Testimonials">
     <div class="row>">
         <div>
             
@@ -150,7 +154,7 @@
     <img>
     <div class="footer__links">
         <a href="https://www.facebook.com/Beespoke-Events-104508188757383"><img src="images/facebook.jpeg" class="footer__link" alt="facebook"></a>
-        <a href="https://www.instagram.com/beespoke_events/"><img src="images/instagram2.jpeg" class="footer__link" alt="instagram" /></a>
+        <a href="https://www.instagram.com/beespoke_events/"><img src="images/instagram.png" class="footer__link" alt="instagram" /></a>
     </div>
     <p class="copyright">Copyright &copy; Beespoke Media</p>
 </footer>
