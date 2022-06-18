@@ -368,7 +368,8 @@ margin-bottom: 8px;
         text-align: center;
      }
      .btn{
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
      }
 
      .balloon__img--landscape{
@@ -377,6 +378,12 @@ margin-bottom: 8px;
 
      .footer__link{
         height: 48px;
+     }
+
+     .button__wrapper{
+        justify-content: center;
+        align-items: center;
+        display: flex;
      }
 }
 
@@ -443,4 +450,8 @@ margin-bottom: 8px;
         flex-direction: column;
         text-align: center;
     }
+
+    .footer__link{
+        height: 48px;
+     }
 }
