@@ -318,7 +318,7 @@ margin-bottom: 8px;
 
 .footer__link{
     padding: 0 16px;
-
+    height: 48px;
 }
 
 .copyright{
@@ -395,13 +395,7 @@ margin-bottom: 8px;
     .btn__menu{
         display: block;
     }
-    .highlight{
-        width: 100%;
-        margin-bottom: 24px;
-    }
-    .highlight:not(:last-child){
-        margin-bottom: 24px;
-    }
+
     h1{
         font-size: 32px;
         margin-bottom: 24px;
@@ -453,5 +447,9 @@ margin-bottom: 8px;
 
     .footer__link{
         height: 48px;
+     }
+
+     .book__price--normal{
+        margin-top: 8px;
      }
 }
